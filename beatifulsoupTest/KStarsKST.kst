@@ -1,0 +1,152 @@
+<KStars>
+	<Version>1.0.0</version>
+	<Option>
+		<SpeakerList>CHI</SpeakerList>
+		<SpeakerList>MOT</SpeakerList>
+		<SpeakerList>FAT</SpeakerList>
+		<StringOption>0011210</StringOption>
+	</Option>
+	<Header>
+		<Participants>CHI 대상 아동</Participants>
+		<Participants>MOT 엄마</Participants>
+		<Participants>FAT 아빠</Participants>
+		<ID>
+			<IDCorpus></IDCorpus>
+			<IDCode>CHI</IDCode>
+			<IDDateofBirth></IDDateofBirth>
+			<IDAge>10대 미만</IDAge>
+			<IDSex>남</IDSex>
+			<IDGroup>대도시</IDGroup>
+			<IDRegion>서울/경기 지역</IDRegion>
+			<IDSES>150만원 이하</IDSES>
+			<IDEdu>초등학교 졸업 이하</IDEdu>
+			<IDRole>대상 아동</IDRole>
+		</ID>
+		<ID>
+			<IDCorpus></IDCorpus>
+			<IDCode>MOT</IDCode>
+			<IDDateofBirth></IDDateofBirth>
+			<IDAge>30대</IDAge>
+			<IDSex>여</IDSex>
+			<IDGroup>대도시</IDGroup>
+			<IDRegion>서울/경기 지역</IDRegion>
+			<IDSES>451만원 이상</IDSES>
+			<IDEdu>대학원 이상</IDEdu>
+			<IDRole>엄마</IDRole>
+		</ID>
+		<ID>
+			<IDCorpus></IDCorpus>
+			<IDCode>FAT</IDCode>
+			<IDDateofBirth></IDDateofBirth>
+			<IDAge>30대</IDAge>
+			<IDSex>남</IDSex>
+			<IDGroup>대도시</IDGroup>
+			<IDRegion>서울/경기 지역</IDRegion>
+			<IDSES>451만원 이상</IDSES>
+			<IDEdu>대학원 이상</IDEdu>
+			<IDRole>아빠</IDRole>
+		</ID>
+		<BirthPlaceofCHI>면목동</BirthPlaceofCHI>
+		<Location>한신아파트</Location>
+		<Situation>아이가 노는 상황</Situation>
+		<Recording>상</Recording>
+		<Transcriber>홍영준</Transcriber>
+		<Reviewer>홍영준</Reviewer>
+		<Comment>홍영준</Comment>
+	</Header>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>CHI</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>안녕하세요 제 이름은 홍영준입니다.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>안녕:NNG/하:XSA/시:EP/어요:EC/ 저:NP/의:JKG/ 이름:NNG/은:JX/홍영준:NNP/이:VCP/ㅂ니다:EF/.:SF/</Morpheme>
+			<MU>안녕:NNG/하:XSA/시:EP/어요:EC/ 저:NP/의:JKG/ 이름:NNG/은:JX/홍영준:NNP/이:VCP/ㅂ니다:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>MOT</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>나는 너의 엄마 임진옥이야.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>나:NP/는:JX/ 너:NP/의:JKG/ 엄마:NNG/임진옥:NNP/이:VCP/야:EF/.:SF/</Morpheme>
+			<MU>나:NP/는:JX/ 너:NP/의:JKG/ 엄마:NNG/임진옥:NNP/이:VCP/야:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>FAT</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>나는 너의 아빠 홍환식이야.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>나:NP/는:JX/ 너:NP/의:JKG/ 아빠:NNG/홍환식:NNP/이:VCP/야:EF/.:SF/</Morpheme>
+			<MU>나:NP/는:JX/ 너:NP/의:JKG/ 아빠:NNG/홍환식:NNP/이:VCP/야:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>CHI</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>내 여자친구는 김성은입니다.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>나:NP/의:JKG/ 여자:NNG/친구:NNG/는:JX/김성은:NNP/이:VCP/ㅂ니다:EF/.:SF/</Morpheme>
+			<MU>나:NP/의:JKG/ 여자:NNG/친구:NNG/는:JX/김성은:NNP/이:VCP/ㅂ니다:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>MOT</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>성은이는 참 예뻐.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>성은이:NNP/는:JX/ 참:MAG/예쁘:VA/어:EF/.:SF/</Morpheme>
+			<MU>성은이:NNP/는:JX/ 참:MAG/예쁘:VA/어:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>FAT</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>당신이 더 예뻐.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>당신:NP/이:JKS/ 더:MAG/예쁘:VA/어:EF/.:SF/</Morpheme>
+			<MU>당신:NP/이:JKS/ 더:MAG/예쁘:VA/어:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Audio>
+		<AudioPath>C:\Users\HongYeongJune\Desktop\HIP.mp3</AudioPath>
+		<AudioFileIndex>0</AudioFileIndex>
+		<AudioCurrentPosition>0</AudioCurrentPosition>
+	</Audio>
+</KStars>

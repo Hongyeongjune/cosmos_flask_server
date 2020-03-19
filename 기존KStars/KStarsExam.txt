@@ -1,0 +1,243 @@
+<KStars>
+	<Version>1.0.0</version>
+	<Option>
+		<SpeakerList>CHI</SpeakerList>
+		<SpeakerList>MOT</SpeakerList>
+		<SpeakerList>FAT</SpeakerList>
+		<StringOption>1010111</StringOption>
+	</Option>
+	<Header>
+		<Participants>CHI 대상 아동</Participants>
+		<Participants>MOT 엄마</Participants>
+		<Participants>FAT 아빠</Participants>
+		<ID>
+			<IDCorpus></IDCorpus>
+			<IDCode>CHI</IDCode>
+			<IDDateofBirth></IDDateofBirth>
+			<IDAge>10대 미만</IDAge>
+			<IDSex>남</IDSex>
+			<IDGroup>대도시</IDGroup>
+			<IDRegion>서울/경기 지역</IDRegion>
+			<IDSES>150만원 이하</IDSES>
+			<IDEdu>초등학교 졸업 이하</IDEdu>
+			<IDRole>대상 아동</IDRole>
+		</ID>
+		<ID>
+			<IDCorpus></IDCorpus>
+			<IDCode>MOT</IDCode>
+			<IDDateofBirth></IDDateofBirth>
+			<IDAge>30대</IDAge>
+			<IDSex>여</IDSex>
+			<IDGroup>대도시</IDGroup>
+			<IDRegion>서울/경기 지역</IDRegion>
+			<IDSES>451만원 이상</IDSES>
+			<IDEdu>대학원 이상</IDEdu>
+			<IDRole>엄마</IDRole>
+		</ID>
+		<ID>
+			<IDCorpus></IDCorpus>
+			<IDCode>FAT</IDCode>
+			<IDDateofBirth></IDDateofBirth>
+			<IDAge>30대</IDAge>
+			<IDSex>남</IDSex>
+			<IDGroup>대도시</IDGroup>
+			<IDRegion>서울/경기 지역</IDRegion>
+			<IDSES>451만원 이상</IDSES>
+			<IDEdu>대학원 이상</IDEdu>
+			<IDRole>아빠</IDRole>
+		</ID>
+		<BirthPlaceofCHI>면목동</BirthPlaceofCHI>
+		<Location>한신아파트</Location>
+		<Situation>아이가 노는 상황</Situation>
+		<Recording>중</Recording>
+		<Transcriber>홍영준</Transcriber>
+		<Reviewer>홍영준</Reviewer>
+		<Comment>홍영준</Comment>
+	</Header>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>CHI</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>안녕하세요.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>안녕:NNG/하:XSA/세요:EF/.:SF/</Morpheme>
+			<MU>녕:NNG/하:XSA/세요:EF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>CHI</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>제 이름은 홍영준입니다.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>저:NP/의:JKG/ 이름:NNG/은:JX/홍영준:NNP/이:VCP/ㅂ니다:EF/.:SF/</Morpheme>
+			<MU>저:NP/의:JKG/ 이름:NNG/은:JX/홍영준:NNP/이:VCP/ㅂ니다:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>MOT</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>안녕하세요.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>안녕:NNG/하:XSA/세요:EF/.:SF/</Morpheme>
+			<MU>녕:NNG/하:XSA/세요:EF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>MOT</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>제 이름은 현재호입니다.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>저:NP/의:JKG/ 이름:NNG/은:JX/현재호:NNP/이:VCP/ㅂ니다:EF/.:SF/</Morpheme>
+			<MU>저:NP/의:JKG/ 이름:NNG/은:JX/현재호:NNP/이:VCP/ㅂ니다:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>FAT</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>안녕하세요.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>안녕:NNG/하:XSA/세요:EF/.:SF/</Morpheme>
+			<MU>녕:NNG/하:XSA/세요:EF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>FAT</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>제 이름은 코스모스입니다.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>저:NP/의:JKG/ 이름:NNG/은:JX/코스모스:NNG/이:VCP/ㅂ니다:EF/.:SF/</Morpheme>
+			<MU>저:NP/의:JKG/ 이름:NNG/은:JX/코스모스:NNG/이:VCP/ㅂ니다:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>CHI</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>제 취미는 축구입니다.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>저:NP/의:JKG/ 취미:NNG/는:JX/축구:NNG/이:VCP/ㅂ니다:EF/.:SF/</Morpheme>
+			<MU>저:NP/의:JKG/ 취미:NNG/는:JX/축구:NNG/이:VCP/ㅂ니다:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>MOT</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>제 취미는 야구입니다.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>저:NP/의:JKG/ 취미:NNG/는:JX/야구:NNG/이:VCP/ㅂ니다:EF/.:SF/</Morpheme>
+			<MU>저:NP/의:JKG/ 취미:NNG/는:JX/야구:NNG/이:VCP/ㅂ니다:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>FAT</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>제 취미는 농구입니다.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>저:NP/의:JKG/ 취미:NNG/는:JX/농구:NNG/이:VCP/ㅂ니다:EF/.:SF/</Morpheme>
+			<MU>저:NP/의:JKG/ 취미:NNG/는:JX/농구:NNG/이:VCP/ㅂ니다:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>CHI</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>저의 특기는 프로그래밍입니다.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>저:NP/의:JKG/ 특기:NNG/는:JX/프로그래밍:NNG/이:VCP/ㅂ니다:EF/.:SF/</Morpheme>
+			<MU>저:NP/의:JKG/ 특기:NNG/는:JX/프로그래밍:NNG/이:VCP/ㅂ니다:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>MOT</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>저의 특기 또한 프로그래밍입니다.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>저:NP/의:JKG/ 특기:NNG/ 또한:MAG/프로그래밍:NNG/이:VCP/ㅂ니다:EF/.:SF/</Morpheme>
+			<MU>저:NP/의:JKG/ 특기:NNG/ 또한:MAG/프로그래밍:NNG/이:VCP/ㅂ니다:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Data>
+		<DataType>KData</DataType>
+		<Speaker>FAT</Speaker>
+		<Tier>
+			<TierType>KUtterance</TierType>
+			<TimePosition>-1/-1</TimePosition>
+			<Text>저는 특기가 없습니다.</Text>
+			<EndText></EndText>
+		</Tier>
+		<Tier>
+			<TierType>KMorpheme</TierType>
+			<Morpheme>저:NP/는:JX/ 특기:NNG/가:JKS/없:VA/습니다:EF/.:SF/</Morpheme>
+			<MU>저:NP/는:JX/ 특기:NNG/가:JKS/없:VA/습니다:EF/.:SF/</MU>
+		</Tier>
+	</Data>
+	<Audio>
+		<AudioPath>C:\Users\HongYeongJune\Desktop\HIP.mp3</AudioPath>
+		<AudioFileIndex>0</AudioFileIndex>
+		<AudioCurrentPosition>0</AudioCurrentPosition>
+	</Audio>
+</KStars>
+242줄
