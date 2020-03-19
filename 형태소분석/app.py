@@ -364,7 +364,7 @@ def test():
     return jsonify(data)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000, debug=True)
 
 @app.route("/test2", methods=['POST'])
 def test2():
