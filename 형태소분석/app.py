@@ -159,8 +159,8 @@ class morpAPI2:
 
         # print(answer)
         # return answer
-
-        return jsonString
+        myString = "HIHIHIHIHI"
+        return myString
 
 
 
