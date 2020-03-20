@@ -353,6 +353,19 @@ class AnalysisAPI():
     code = ""
 
 
+@app.route("/cosmos/KStars/morp", methods=['POST'])
+def cosmos_morp():
+    data = request.json
+    print(data)
+    hi = morpAPI2(data['text'])
+    moreResult = hi.showMorp2()
+
+    data['analysisResult'] = moreResult
+    print(type(data['analysisResult']))
+    print(data['analysisResult'])
+    return jsonify(data)
+
+
 @app.route("/test", methods=['POST'])
 def test():
     data = request.json
@@ -368,16 +381,3 @@ def test():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
-
-
-@app.route("/cosmos/KStars/morp", methods=['POST'])
-def cosmos_morp():
-    data = request.json
-    print(data)
-    hi = morpAPI2(data['text'])
-    moreResult = hi.showMorp2()
-
-    data['analysisResult'] = moreResult
-    print(type(data['analysisResult']))
-    print(data['analysisResult'])
-    return jsonify(data)
