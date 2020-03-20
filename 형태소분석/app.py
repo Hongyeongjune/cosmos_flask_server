@@ -1,4 +1,4 @@
-from flask import Flask , jsonify
+from flask import Flask, jsonify
 from flask import request
 from pydub import AudioSegment
 from datetime import datetime
@@ -12,6 +12,7 @@ from pprint import pprint
 answer = ''
 jsonString = OrderedDict()
 analysis_data = ""
+
 
 class morpAPI2:
     openApiURL = "http://aiopen.etri.re.kr:8000/WiseNLU"
@@ -159,16 +160,15 @@ class morpAPI2:
 
         # print(answer)
         # return answer
-        myString = "HIHIHIHIHI"
-        return myString
 
-
+        return jsonString
 
         # return jsonString
 
     def setOutput(self, str):
         with open('morpAPI.txt', 'w', encoding="utf-8") as make_file:
             json.dump(str, make_file, ensure_ascii=False, indent=4)
+
 
 class morpAPI:
     openApiURL = "http://aiopen.etri.re.kr:8000/WiseNLU"
@@ -243,7 +243,7 @@ class morpAPI:
     형태소 분석부분
     '''
 
-    def showMorp(self, answer = ""): #analysis_data = dict()):
+    def showMorp(self, answer=""):  # analysis_data = dict()):
         test = ''
         print("형태소분석결과 ")
         strnum = len(self.result)  # 총문장갯수
@@ -263,7 +263,6 @@ class morpAPI:
                     str = ''
 
                     str = self.result[i]['morp'][j]['lemma'] + ":" + self.result[i]['morp'][j]['type']
-
 
                     # analysis_data['key'].append(self.result[i]['morp'][j]['lemma'])
                     # analysis_data['value'].append(self.result[i]['morp'][j]['type'])
@@ -319,8 +318,6 @@ class morpAPI:
         print(answer)
         return answer
 
-
-
         # return jsonString
 
     def setOutput(self, str):
@@ -334,6 +331,7 @@ class morpAPI:
 
 app = Flask(__name__)
 
+
 # @app.route('/')
 # def hello_world():
 #     hi = morpAPI("C:\\Users\\User\\PycharmProjects\\Cosmos\\text1.txt")
@@ -343,10 +341,12 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    hi = morpAPI("엑소브레인은 내 몸 바깥에 있는 인공 두뇌라는 뜻으로, 세계 최고인공지능 기술 선도라는 비전을 달성하기 위한 과학기술정보통신부 소프트웨어 분야의 국가 혁신기술 개발형 연구개발 과제이다.")
+    hi = morpAPI(
+        "엑소브레인은 내 몸 바깥에 있는 인공 두뇌라는 뜻으로, 세계 최고인공지능 기술 선도라는 비전을 달성하기 위한 과학기술정보통신부 소프트웨어 분야의 국가 혁신기술 개발형 연구개발 과제이다.")
     morpResult = hi.showMorp()
 
     return morpResult
+
 
 class AnalysisAPI():
     morp = ""
@@ -365,11 +365,13 @@ def test():
 
     return jsonify(data)
 
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
 
-@app.route("/test2", methods=['POST'])
-def test2():
+
+@app.route("/cosmos/KStars/morp", methods=['POST'])
+def cosmos_morp():
     data = request.json
     print(data)
     hi = morpAPI2(data['text'])
