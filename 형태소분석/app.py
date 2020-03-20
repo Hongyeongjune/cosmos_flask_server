@@ -124,7 +124,7 @@ class morpAPI2:
 
                     json.dump(str, make_file, ensure_ascii=False, indent=4)
 
-        myFile = open("C:\\Users\\User\\PycharmProjects\\Cosmos\\morpAPI.txt", "r", encoding="utf-8")
+        myFile = open("/home/ubuntu/virtual_cosmos/cosmos_flask_server/morpAPI.txt", "r", encoding="utf-8")
 
         text = myFile.readline()
         print("\n")
