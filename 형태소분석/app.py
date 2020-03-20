@@ -282,7 +282,8 @@ class morpAPI:
 
                     json.dump(str, make_file, ensure_ascii=False, indent=4)
 
-        myFile = open("C:\\Users\\User\\PycharmProjects\\Cosmos\\morpAPI.txt", "r", encoding="utf-8")
+        # myFile = open("C:\\Users\\User\\PycharmProjects\\Cosmos\\morpAPI.txt", "r", encoding="utf-8")
+        myFile = open("/home/ubuntu/virtual_cosmos/cosmos_flask_server/morpAPI.txt", "r", encoding="utf-8")
 
         text = myFile.readline()
         print("\n")
@@ -374,6 +375,6 @@ def test2():
     moreResult = hi.showMorp2()
 
     data['analysisResult'] = moreResult
-
+    print(type(data['analysisResult']))
     print(data['analysisResult'])
     return jsonify(data)
