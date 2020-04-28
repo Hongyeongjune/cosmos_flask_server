@@ -347,7 +347,6 @@ def hello_world():
 
     return morpResult
 
-
 class AnalysisAPI():
     morp = ""
     code = ""
@@ -363,6 +362,19 @@ def cosmos_morp():
     data['analysisResult'] = moreResult
     print(type(data['analysisResult']))
     print(data['analysisResult'])
+    return jsonify(data)
+
+@app.route("/cosmos/KStars/morpList", methods=['POST'])
+def cosmos_morp_board():
+    data = request.json
+    for i in range(len(data)):
+        analysis = morpAPI2(data[i]['text'])
+        resultList = analysis.showMorp2()
+        data[i]['analysisResult'] = resultList
+
+    print(data[0])
+    print(data[1])
+
     return jsonify(data)
 
 

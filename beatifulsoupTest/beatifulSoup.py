@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 
 # KST 파일 읽기
-fp = open("C:\\Users\\User\\PycharmProjects\\Cosmos\\KStarsKST.kst", 'rt', encoding='UTF8')
+fp = open("C:\\Users\\User\\PycharmProjects\\Cosmos\\beatifulsoupTest\\KStarsKST.kst", 'rt', encoding='UTF8')
 
 # 읽은 KST 파일을 Beautiful 라이브러리를 이용하여 분석
 soup = BeautifulSoup(fp, 'lxml-xml')

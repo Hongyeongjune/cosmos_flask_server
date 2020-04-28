@@ -1,0 +1,210 @@
+<KStars>
+	<Version>1.0.0</version>
+	<Option>
+		<SpeakerList>CHI</SpeakerList>
+		<SpeakerList>MOT</SpeakerList>
+		<SpeakerList>FAT</SpeakerList>
+		<StringOption>0000000</StringOption>
+	</Option>
+	<Header>
+		<SpeechType>Dialog</SpeechType>
+		<Participants>CHI 대상 아동</Participants>
+		<Participants>MOT 엄마</Participants>
+		<Participants>FAT 아빠</Participants>
+		<ID>
+			<IDCorpus></IDCorpus>
+			<IDCode>CHI</IDCode>
+			<IDDateofBirth></IDDateofBirth>
+			<IDAge>10대 미만</IDAge>
+			<IDSex>남</IDSex>
+			<IDGroup>대도시</IDGroup>
+			<IDRegion>서울/경기 지역</IDRegion>
+			<IDSES>150만원 이하</IDSES>
+			<IDEdu>초등학교 졸업 이하</IDEdu>
+			<IDRole>대상 아동</IDRole>
+		</ID>
+		<ID>
+			<IDCorpus></IDCorpus>
+			<IDCode>MOT</IDCode>
+			<IDDateofBirth></IDDateofBirth>
+			<IDAge>30대</IDAge>
+			<IDSex>여</IDSex>
+			<IDGroup>대도시</IDGroup>
+			<IDRegion>서울/경기 지역</IDRegion>
+			<IDSES>451만원 이상</IDSES>
+			<IDEdu>대학원 이상</IDEdu>
+			<IDRole>엄마</IDRole>
+		</ID>
+		<ID>
+			<IDCorpus></IDCorpus>
+			<IDCode>FAT</IDCode>
+			<IDDateofBirth></IDDateofBirth>
+			<IDAge>30대</IDAge>
+			<IDSex>남</IDSex>
+			<IDGroup>대도시</IDGroup>
+			<IDRegion>서울/경기 지역</IDRegion>
+			<IDSES>451만원 이상</IDSES>
+			<IDEdu>대학원 이상</IDEdu>
+			<IDRole>아빠</IDRole>
+		</ID>
+		<BirthPlaceofCHI>면목동</BirthPlaceofCHI>
+		<Location>한신아파트</Location>
+		<Situation>아이가 노는 상황</Situation>
+		<Recording>중</Recording>
+		<Transcriber>홍영준</Transcriber>
+		<Reviewer>홍영준</Reviewer>
+		<Comment>홍영준</Comment>
+	</Header>
+    <Tier type = "KUtterance">
+        <Data uid="1">
+            <Speaker>CHI</Speaker>
+		    <Text>안녕하세요.</Text>
+			<Time>-1/-1</Time>
+		    <EndText></EndText>
+        </Data>
+        <Data uid="2">
+            <Speaker>CHI</Speaker>
+		    <Text>제 이름은 홍영준입니다.</Text>
+			<Time>-1/-1</Time>
+		    <EndText></EndText>
+        </Data>
+        <Data uid="3">
+            <Speaker>MOT</Speaker>
+		    <Text>안녕하세요.</Text>
+			<Time>-1/-1</Time>
+		    <EndText></EndText>
+        </Data>
+        <Data uid="4">
+            <Speaker>MOT</Speaker>
+			<Text>제 이름은 현재호입니다.</Text>
+			<Time>-1/-1</Time>
+		    <EndText></EndText>
+        </Data>
+        <Data uid="5">
+            <Speaker>FAT</Speaker>
+		    <Text>안녕하세요.</Text>
+			<Time>-1/-1</Time>
+		    <EndText></EndText>
+        </Data>
+        <Data uid="">
+            <Speaker>FAT</Speaker>
+		    <Text>제 이름은 코스모스입니다.</Text>
+			<Time>-1/-1</Time>
+		    <EndText></EndText>
+        </Data>
+        <Data uid="">
+            <Speaker>CHI</Speaker>
+			<Text>제 취미는 축구입니다.</Text>
+			<Time>-1/-1</Time>
+			<EndText></EndText>
+        </Data>
+        <Data uid="">
+            <Speaker>MOT</Speaker>
+			<Text>제 취미는 야구입니다.</Text>
+			<Time>-1/-1</Time>
+			<EndText></EndText>
+        </Data>
+        <Data uid="">
+            <Speaker>FAT</Speaker>
+			<Text>제 취미는 농구입니다.</Text>
+			<Time>-1/-1</Time>
+			<EndText></EndText>
+        </Data>
+        <Data uid="">
+            <Speaker>CHI</Speaker>
+			<Text>저의 특기는 프로그래밍입니다.</Text>
+			<Time>-1/-1</Time>
+			<EndText></EndText>
+        </Data>
+        <Data uid="">
+            <Speaker>MOT</Speaker>
+			<Text>저의 특기 또한 프로그래밍입니다.</Text>
+			<Time>-1/-1</Time>
+			<EndText></EndText>
+        </Data>
+        <Data uid="">
+            <Speaker>FAT</Speaker>
+			<Text>저는 특기가 없습니다.</Text>
+			<Time>-1/-1</Time>
+			<EndText></EndText>
+        </Data>
+        <Data uid="13">
+            <Speaker>CHI</Speaker>
+			<Text>네</Text>
+			<Time>-1/-1</Time>
+			<EndText></EndText>
+        </Data>
+    </Tier>
+    <Tier type = "KMorpheme">
+        <Data uid="1">
+            <Speaker>CHI</Speaker>
+			<MEtri>안녕:NNG/하:XSA/세요:EF/.:SF/</MEtri>
+			<MUser>녕:NNG/하:XSA/세요:EF/</MUser>
+        </Data>
+        <Data uid="2">
+            <Speaker>CHI</Speaker>
+			<MEtri>저:NP/의:JKG/ 이름:NNG/은:JX/홍영준:NNP/이:VCP/ㅂ니다:EF/.:SF/</MEtri>
+			<MUser>저:NP/의:JKG/ 이름:NNG/은:JX/홍영준:NNP/이:VCP/ㅂ니다:EF/.:SF/</MUser>
+        </Data>
+        <Data uid="3">
+            <Speaker>MOT</Speaker>
+			<MEtri>안녕:NNG/하:XSA/세요:EF/.:SF/</MEtri>
+			<MUser>녕:NNG/하:XSA/세요:EF/</MUser>
+        </Data>
+        <Data uid="4">
+            <Speaker>MOT</Speaker>
+			<MEtri>저:NP/의:JKG/ 이름:NNG/은:JX/현재호:NNP/이:VCP/ㅂ니다:EF/.:SF/</MEtri>
+			<MUser>저:NP/의:JKG/ 이름:NNG/은:JX/현재호:NNP/이:VCP/ㅂ니다:EF/.:SF/</MUser>
+        </Data>
+        <Data uid="5">
+            <Speaker>FAT</Speaker>
+			<MEtri>안녕:NNG/하:XSA/세요:EF/.:SF/</MEtri>
+			<MUser>녕:NNG/하:XSA/세요:EF/</MUser>
+        </Data>
+        <Data uid="">
+            <Speaker>FAT</Speaker>
+			<MEtri>저:NP/의:JKG/ 이름:NNG/은:JX/코스모스:NNG/이:VCP/ㅂ니다:EF/.:SF/</MEtri>
+			<MUser>저:NP/의:JKG/ 이름:NNG/은:JX/코스모스:NNG/이:VCP/ㅂ니다:EF/.:SF/</MUser>
+        </Data>
+        <Data uid="">
+            <Speaker>CHI</Speaker>
+			<MEtri>저:NP/의:JKG/ 취미:NNG/는:JX/축구:NNG/이:VCP/ㅂ니다:EF/.:SF/</MEtri>
+			<MUser>저:NP/의:JKG/ 취미:NNG/는:JX/축구:NNG/이:VCP/ㅂ니다:EF/.:SF/</MUser>
+        </Data>
+        <Data uid="">
+            <Speaker>MOT</Speaker>
+			<MEtri>저:NP/의:JKG/ 취미:NNG/는:JX/야구:NNG/이:VCP/ㅂ니다:EF/.:SF/</MEtri>
+			<MUser>저:NP/의:JKG/ 취미:NNG/는:JX/야구:NNG/이:VCP/ㅂ니다:EF/.:SF/</MUser>
+        </Data>
+        <Data uid="">
+            <Speaker>FAT</Speaker>
+			<MEtri>저:NP/의:JKG/ 취미:NNG/는:JX/농구:NNG/이:VCP/ㅂ니다:EF/.:SF/</MEtri>
+			<MUser>저:NP/의:JKG/ 취미:NNG/는:JX/농구:NNG/이:VCP/ㅂ니다:EF/.:SF/</MUser>
+        </Data>
+        <Data uid="">
+            <Speaker>CHI</Speaker>
+			<MEtri>저:NP/의:JKG/ 특기:NNG/는:JX/프로그래밍:NNG/이:VCP/ㅂ니다:EF/.:SF/</MEtri>
+			<MUser>저:NP/의:JKG/ 특기:NNG/는:JX/프로그래밍:NNG/이:VCP/ㅂ니다:EF/.:SF/</MUser>
+        </Data>
+        <Data uid="">
+            <Speaker>MOT</Speaker>
+			<MEtri>저:NP/의:JKG/ 특기:NNG/ 또한:MAG/프로그래밍:NNG/이:VCP/ㅂ니다:EF/.:SF/</MEtri>
+			<MUser>저:NP/의:JKG/ 특기:NNG/ 또한:MAG/프로그래밍:NNG/이:VCP/ㅂ니다:EF/.:SF/</MUser>
+        </Data>
+        <Data uid="">
+            <Speaker>FAT</Speaker>
+			<MEtri>저:NP/는:JX/ 특기:NNG/가:JKS/없:VA/습니다:EF/.:SF/</MEtri>
+			<MUser>저:NP/는:JX/ 특기:NNG/가:JKS/없:VA/습니다:EF/.:SF/</MUser>
+        </Data>
+        <Data uid="13">
+            <Speaker>CHI</Speaker>
+			<MEtri>네:NP</MEtri>
+			<MUser>네:NP</MUser>
+        </Data>
+    </Tier>
+	<Audio>
+		<AudioPath>C:\Users\HongYeongJune\Desktop\HIP.mp3</AudioPath>
+		<AudioFileIndex>0</AudioFileIndex>
+		<AudioCurrentPosition>0</AudioCurrentPosition>
+	</Audio>
+</KStars>
