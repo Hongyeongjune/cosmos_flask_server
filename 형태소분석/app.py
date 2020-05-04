@@ -372,9 +372,6 @@ def cosmos_morp_board():
         resultList = analysis.showMorp2()
         data[i]['analysisResult'] = resultList
 
-    print(data[0])
-    print(data[1])
-
     return jsonify(data)
 
 
