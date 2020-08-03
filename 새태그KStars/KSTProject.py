@@ -170,10 +170,6 @@ class KSTProject:
         print(self.m_Audio.AudioFileIndex)
         print(self.m_Audio.AudioCurrentPosition)
 
-
-
-
-
 if __name__ == "__main__":
     hi = KSTProject()
     hi.ProjectLoad(os.getcwd() + "\\BeautifulSoupKST.kst")

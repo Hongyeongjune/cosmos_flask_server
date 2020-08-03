@@ -1,3 +1,4 @@
+import errno
 import os
 
 from flask import Flask, jsonify
@@ -8,9 +9,11 @@ app = Flask(__name__)
 
 @app.route("/cosmos/KStars/create/kst", methods=['POST'])
 def cosmos_create_file():
+    # request.josn = 스프링에서 restTemplate로 보낸 json데이터를 담는다.
     data = request.json
     print(data)
 
+    #기억이 안남
     def indent(node, level=0):
         i = "\n" + level * " " * 4
         if len(node):
@@ -26,7 +29,7 @@ def cosmos_create_file():
             if level and (not node.tail or not node.tail.strip()):
                 node.tail = i
 
-
+    # BeautifulSoup 라이브러리를 사용해서 kst 파일 생성.
     # Root = KStars
     root = Element('KStars')
 
@@ -36,10 +39,10 @@ def cosmos_create_file():
     # <Option>
     Option = SubElement(root, 'Option')
     # <Option> => <SpeakerList>
-    for i in range(len(data['m_Option']["SpeakerList"])):
-        SubElement(Option, "SpeakerList").text = data['m_Option']["SpeakerList"][i]
+    for i in range(len(data['m_Option']["speakerList"])):
+        SubElement(Option, "SpeakerList").text = data['m_Option']["speakerList"][i]
     # <Option> => <StringOption>
-    SubElement(Option, "StringOption").text = data['m_Option']["StringOption"]
+    SubElement(Option, "StringOption").text = data['m_Option']["stringOption"]
 
     # <Header>
     Header = SubElement(root, 'Header')
@@ -119,6 +122,20 @@ def cosmos_create_file():
     indent(root)
 
     tree = ElementTree(root)
-    tree.write(os.getcwd() + "\\새태그KStars\\test.kst", encoding="utf-8")
+    localPath = os.path.abspath("C:/Users/User/eclipse-workspace/K-Stars/src/main/java/kr/ac/skuniv/cosmos")
+
+    if data['userDto']['user'] == "guest":
+        tree.write(localPath + "\\guest\\temp\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
+    elif data['userDto']['user'] == "user":
+        try:
+            if not(os.path.isdir(localPath + "\\user\\" + data['userDto']['id'])):
+                os.makedirs(os.path.join(localPath + "\\user\\" + data['userDto']['id']))
+                tree.write(localPath + "\\user\\" + data['userDto']['id'] + "\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
+            if os.path.isdir(localPath + "\\user\\" + data['userDto']['id']):
+                tree.write(localPath + "\\user\\" + data['userDto']['id'] + "\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
+        except OSError as e:
+            if e.errno != errno.EEXIST:
+                    print("Failed to create directory!!!!!")
+                    raise
 
     return jsonify(data)
