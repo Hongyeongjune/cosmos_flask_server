@@ -1,5 +1,7 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, app
 from flask import request
+
+from konlpy.tag import Kkma
 
 import urllib3
 import json
@@ -363,6 +365,7 @@ def cosmos_morp():
 @app.route("/cosmos/KStars/morpList", methods=['POST'])
 def cosmos_morp_board():
     data = request.json
+
     for i in range(len(data)):
         analysis = morpAPI2(data[i]['text'])
         resultList = analysis.showMorp2()
@@ -380,6 +383,67 @@ def test():
 
     # print(moreResult)
     data['analysisResult'] = moreResult
+
+    return jsonify(data)
+
+Kkma = Kkma()
+
+class KKma:
+    text = "기본"  # 분석할 대상
+    data = " "  # api를 통해서 받은 분석결과 json
+    result = " "  # data를 리스트로 변환한 분석결과변수-변수이름 고치기
+
+    def __init__(self, userFile):
+
+        self.text = self.setText(userFile)
+
+        print("--현재분석문장-- ")
+        print(self.text)
+
+        print("\n")
+
+    def setText(self, userFile):
+
+        # myFile = open(userFile, "r", encoding="utf-8")
+        # self.text = myFile.readlines()
+        self.text = userFile
+
+        return self.text
+
+    def showmorp(self):
+        okja = self.text
+
+        # okja = []
+        # for line in self.text:
+        #     okja.append(line)
+
+        sentences_tag = []
+        count = 0
+
+        f = open('result.txt', 'w', encoding='utf-8')
+        # for sentence in okja:
+
+        print("분석 문장: ", okja)
+
+        morph = Kkma.pos(okja)
+            # count = count + 1
+            # print(count, "번째 문장 분석결과 : ", morph)
+            # print("\n")
+
+            # f.writelines(str(morph))
+            # f.writelines("\n")
+
+        return morph
+        # f.close()
+
+@app.route("/cosmos/KStars/morpList/KoNLPy", methods=['POST'])
+def cosmos_morp_konlpy_board():
+    data = request.json
+
+    for i in range(len(data)):
+        analysis = KKma(data[i]['text'])
+        resultList = analysis.showmorp()
+        data[i]['analysisResult'] = resultList
 
     return jsonify(data)
 

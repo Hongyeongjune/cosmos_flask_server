@@ -89,7 +89,6 @@ def cosmos_create_file():
         SubElement(UserID, "IDEdu").text = data['m_header']['arrID'][i]['edu']
         # <Header> => <ID> => <IDRole>
         SubElement(UserID, "IDRole").text = data['m_header']['arrID'][i]['role']
-
     # <Tier type = "KUtterance">
     KUtterance = SubElement(root, "Tier")
     KUtterance.attrib['type'] = data['m_KTierVer2']['dataType']
@@ -113,6 +112,7 @@ def cosmos_create_file():
         SubElement(DataMorp, 'Speaker').text = data['m_KTierMorpVer2']['datas'][i]['speaker']
         SubElement(DataMorp, 'MEtri').text = data['m_KTierMorpVer2']['datas'][i]['morp']
         SubElement(DataMorp, 'MUser').text = data['m_KTierMorpVer2']['datas'][i]['user']
+
 
     Audio = SubElement(root, "Audio")
     for i in range(len(data['m_Audio']['audioPath'])):
