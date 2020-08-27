@@ -1,3 +1,5 @@
+import time
+
 from flask import Flask, jsonify, app
 from flask import request
 
@@ -444,6 +446,9 @@ def cosmos_morp_konlpy_board():
         analysis = KKma(data[i]['text'])
         resultList = analysis.showmorp()
         data[i]['analysisResult'] = resultList
+
+    for i in range(len(data)):
+        print(data[i]['analysisResult'])
 
     return jsonify(data)
 
