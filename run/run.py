@@ -253,12 +253,12 @@ def cosmos_create_file():
             #     tree.write(localPath + "\\user\\" + data['userDto']['id'] + "\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
             # if os.path.isdir(localPath + "\\user\\" + data['userDto']['id']):
             #     tree.write(localPath + "\\user\\" + data['userDto']['id'] + "\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
-            if not (os.path.isdir(cloudPath + "\\user\\" + data['userDto']['id'])):
-                os.makedirs(os.path.join(cloudPath + "\\user\\" + data['userDto']['id']))
-                tree.write(cloudPath + "\\user\\" + data['userDto']['id'] + "\\" + data['userDto']['fileName'] + ".kst",
+            if not (os.path.isdir(cloudPath + "/user/" + data['userDto']['id'])):
+                os.makedirs(os.path.join(cloudPath + "/user/" + data['userDto']['id']))
+                tree.write(cloudPath + "/user/" + data['userDto']['id'] + "/" + data['userDto']['fileName'] + ".kst",
                            encoding="utf-8")
-            if os.path.isdir(cloudPath + "\\user\\" + data['userDto']['id']):
-                tree.write(cloudPath + "\\user\\" + data['userDto']['id'] + "\\" + data['userDto']['fileName'] + ".kst",
+            if os.path.isdir(cloudPath + "/user/" + data['userDto']['id']):
+                tree.write(cloudPath + "/user/" + data['userDto']['id'] + "/" + data['userDto']['fileName'] + ".kst",
                            encoding="utf-8")
         except OSError as e:
             if e.errno != errno.EEXIST:
@@ -539,7 +539,7 @@ def cosmos_load_file():
     cloudPath = os.path.abspath("/home/ubuntu/kst")
     hi = KSTProject()
     # data = hi.ProjectLoad(localPath + "\\guest\\temp\\BeautifulSoupKST.kst", data)
-    data = hi.ProjectLoad(cloudPath + "\\guest\\temp\\BeautifulSoupKST.kst", data)
+    data = hi.ProjectLoad(cloudPath + "/guest/temp/BeautifulSoupKST.kst", data)
     print(data)
 
     return jsonify(data)
