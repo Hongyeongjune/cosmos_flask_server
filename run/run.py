@@ -660,7 +660,8 @@ class morpAPI2:
 
                     json.dump(str, make_file, ensure_ascii=False, indent=4)
 
-        myFile = open("C:/Users/User/PycharmProjects/Cosmos/형태소분석/morpAPI.txt", "r", encoding="utf-8")
+        # myFile = open("C:/Users/User/PycharmProjects/Cosmos/형태소분석/morpAPI.txt", "r", encoding="utf-8")
+        myFile = open("/home/ubuntu/cosmos_flask/cosmos_flask_server/run/morpAPI.text", "r", encoding="utf-8")
         # myFile = open("C:\\Users\\User\\PycharmProjects\\Cosmos\\형태소분석\\morpAPI.txt", "r", encoding="utf-8")
 
         text = myFile.readline()
