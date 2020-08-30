@@ -245,7 +245,7 @@ def cosmos_create_file():
 
     if data['userDto']['user'] == "guest":
         # tree.write(localPath + "\\guest\\temp\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
-        tree.write(cloudPath + "\\guest\\temp\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
+        tree.write(cloudPath + "/guest/temp/" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
     elif data['userDto']['user'] == "user":
         try:
             # if not(os.path.isdir(localPath + "\\user\\" + data['userDto']['id'])):
