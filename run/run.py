@@ -3,7 +3,6 @@ import os
 
 from bs4 import BeautifulSoup
 
-from 새태그KStars.domain.KDataVer2 import KDataVer2
 from 새태그KStars.domain.Audio import Audio
 from 새태그KStars.domain.Data import Data
 from 새태그KStars.domain.Header import Header
@@ -26,6 +25,13 @@ from collections import OrderedDict
 
 app = Flask(__name__)
 
+class KDataVer2:
+    def __init__(self):
+        self.uid = ""
+        self.speaker = ""
+        self.text = ""
+        self.time = ""
+        
 @app.route("/cosmos/KStars/create/kst", methods=['POST'])
 def cosmos_create_file():
     # request.josn = 스프링에서 restTemplate로 보낸 json데이터를 담는다.
