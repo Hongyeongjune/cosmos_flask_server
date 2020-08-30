@@ -1,17 +1,7 @@
 import errno
 import os
-
+from enum import Enum
 from bs4 import BeautifulSoup
-
-from 새태그KStars.domain.Audio import Audio
-from 새태그KStars.domain.Data import Data
-from 새태그KStars.domain.Header import Header
-from 새태그KStars.domain.ID import ID
-from 새태그KStars.domain.KFilePath import KFilePath
-from 새태그KStars.domain.KMorpVer2 import KMorpVer2
-from 새태그KStars.domain.KTierMorpVer2 import KTierMorpVer2
-from 새태그KStars.domain.KTierVer2 import KTierVer2
-from 새태그KStars.domain.Option import Option
 
 from konlpy.tag import Kkma
 
@@ -31,7 +21,110 @@ class KDataVer2:
         self.speaker = ""
         self.text = ""
         self.time = ""
-        
+class Audio:
+    def __init__(self):
+        self.AudioPath = list()
+        self.AudioFileIndex = 0
+        self.AudioCurrentPosition = 0.0
+
+    def initData(self):
+        self.AudioFileIndex = 0
+        self.AudioCurrentPosition = 0
+        self.AudioPath.clear()
+class Data:
+    def __init__(self):
+        self.DataType = ""
+        self.speaker = ""
+        self.ST = -1
+        self.ET = -1
+        self.datas = Tier()
+class Tier:
+    def __init__(self):
+        self.TypeIndex = 0
+        self.type = Enum('TierType', 'Empty Comment')
+        self.StartText = ""
+        self.EndText =""
+        self.datas = list()
+class Header:
+
+    def __init__(self):
+        self.speechType = ""
+        self.arrParticipants = list()
+        self.arrID = list()
+        self.Language = ""
+        self.BirthOfCHI = ""
+        self.BirthPlaceOfCHI = ""
+        self.Date = ""
+        self.Location = ""
+        self.Situation = ""
+        self.Media = ""
+        self.Recording = ""
+        self.Transcriber = ""
+        self.Reviewer = ""
+        self.Comment = ""
+
+
+    def initData(self):
+        self.speechType = ""
+        self.arrParticipants.clear()
+        self.arrID = list()
+        self.BirthOfCHI = ""
+        self.BirthPlaceOfCHI = ""
+        self.Date = ""
+        self.Location = ""
+        self.Situation = ""
+        self.Media = ""
+        self.Recording = ""
+        self.Transcriber = ""
+        self.Reviewer = ""
+        self.Comment = ""
+class ID:
+    def __init__(self):
+        self.IDCorpus = ""
+        self.IDCode = ""
+        self.IDDateOfBirth = ""
+        self.IDAge = ""
+        self.IDSex = ""
+        self.IDGroup = ""
+        self.IDRegion = ""
+        self.IDSES = ""
+        self.IDEdu = ""
+        self.IDRole = ""
+class KFilePath:
+    def __init__(self):
+        self.projectFilePath = ""
+        self.audioFilePath = ""
+
+    def initData(self):
+        self.projectFilePath = ""
+        self.audioFilePath = ""
+class KMorpVer2:
+    def __init__(self):
+        self.uid = ""
+        self.speaker = ""
+        self.morp = ""
+        self.user = ""
+class KTierMorpVer2:
+
+    def __init__(self):
+        self.dataType = ""
+        self.datas = list()
+class KTierVer2:
+
+    def __init__(self):
+        self.dataType = ""
+        self.datas = list()
+class Option:
+    def __init__(self):
+        self.indent = 5
+        self.SpeakerList = list()
+        self.StringOption = "0000000"
+
+    def initData(self):
+        self.indent = ""
+        self.SpeakerList = list()
+        self.StringOption = "0000000"
+
 @app.route("/cosmos/KStars/create/kst", methods=['POST'])
 def cosmos_create_file():
     # request.josn = 스프링에서 restTemplate로 보낸 json데이터를 담는다.
