@@ -122,17 +122,24 @@ def cosmos_create_file():
     indent(root)
 
     tree = ElementTree(root)
-    localPath = os.path.abspath("C:/Users/User/eclipse-workspace/K-Stars/src/main/java/kr/ac/skuniv/cosmos")
+    # localPath = os.path.abspath("C:/Users/User/eclipse-workspace/K-Stars/src/main/java/kr/ac/skuniv/cosmos")
+    cloudPath = os.path.abspath("/home/ubuntu/kst")
 
     if data['userDto']['user'] == "guest":
-        tree.write(localPath + "\\guest\\temp\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
+        # tree.write(localPath + "\\guest\\temp\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
+        tree.write(cloudPath + "\\guest\\temp\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
     elif data['userDto']['user'] == "user":
         try:
-            if not(os.path.isdir(localPath + "\\user\\" + data['userDto']['id'])):
-                os.makedirs(os.path.join(localPath + "\\user\\" + data['userDto']['id']))
-                tree.write(localPath + "\\user\\" + data['userDto']['id'] + "\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
-            if os.path.isdir(localPath + "\\user\\" + data['userDto']['id']):
-                tree.write(localPath + "\\user\\" + data['userDto']['id'] + "\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
+            # if not(os.path.isdir(localPath + "\\user\\" + data['userDto']['id'])):
+            #     os.makedirs(os.path.join(localPath + "\\user\\" + data['userDto']['id']))
+            #     tree.write(localPath + "\\user\\" + data['userDto']['id'] + "\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
+            # if os.path.isdir(localPath + "\\user\\" + data['userDto']['id']):
+            #     tree.write(localPath + "\\user\\" + data['userDto']['id'] + "\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
+            if not(os.path.isdir(cloudPath + "\\user\\" + data['userDto']['id'])):
+                os.makedirs(os.path.join(cloudPath + "\\user\\" + data['userDto']['id']))
+                tree.write(cloudPath + "\\user\\" + data['userDto']['id'] + "\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
+            if os.path.isdir(cloudPath + "\\user\\" + data['userDto']['id']):
+                tree.write(cloudPath + "\\user\\" + data['userDto']['id'] + "\\" + data['userDto']['fileName'] + ".kst", encoding="utf-8")
         except OSError as e:
             if e.errno != errno.EEXIST:
                     print("Failed to create directory!!!!!")

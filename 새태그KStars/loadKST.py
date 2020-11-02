@@ -288,10 +288,11 @@ def cosmos_load_file():
     data = request.json
     print(data)
 
-    localPath = os.path.abspath("C:/Users/User/eclipse-workspace/K-Stars/src/main/java/kr/ac/skuniv/cosmos")
+    # localPath = os.path.abspath("C:/Users/User/eclipse-workspace/K-Stars/src/main/java/kr/ac/skuniv/cosmos")
+    cloudPath = os.path.abspath("\\home\\ubuntu\\kst")
     hi = KSTProject()
-    data = hi.ProjectLoad(localPath + "\\guest\\temp\\BeautifulSoupKST.kst", data)
-
+    # data = hi.ProjectLoad(localPath + "\\guest\\temp\\BeautifulSoupKST.kst", data)
+    data = hi.ProjectLoad(cloudPath + "\\guest\\temp\\BeautifulSoupKST.kst", data)
     print(data)
 
     return jsonify(data)
